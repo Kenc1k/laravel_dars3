@@ -101,6 +101,31 @@
     <!-- /.sidebar -->
   </aside>
 
+<div class="container mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>Jacob</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
