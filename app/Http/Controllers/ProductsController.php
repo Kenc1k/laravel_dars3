@@ -2,39 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product; // Import the Product model
+use App\Models\Category; 
+use App\Models\Product; 
+use App\Models\Post; 
+use App\Models\Comment;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
-    // Method to return the category view
     public function category()
     {
-        return view('category');
+        $categories = Category::all(); 
+        return view('category', compact('categories'));
     }
 
-    // Method to return the post view
     public function post()
     {
-        return view('post');
+        $posts = Post::all();
+        return view('post.index', compact('posts')); 
     }
 
-    // Method to return the comment view
     public function comment()
     {
-        return view('comment');
+        $comments = Comment::all(); 
+        return view('comment.index', compact('comments')); 
     }
 
-    // Method to return the order view
     public function order()
     {
-        return view('order');
+        $orders = Order::all(); 
+        return view('order.index', compact('orders'));
     }
 
-    // Method to return the product view with products data
     public function product()
     {
-        $products = Product::all(); // Fetch all products from the database
-        return view('product', compact('products')); // Pass the products to the view
+        $products = Product::all(); 
+        return view('product.index', compact('products')); 
     }
 }

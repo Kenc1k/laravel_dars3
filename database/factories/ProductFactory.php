@@ -14,7 +14,7 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
-            'category_id' => Category::factory(), // Associate with a category
+            'category_id' => Category::factory(),
         ];
     }
 }

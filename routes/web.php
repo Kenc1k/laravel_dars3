@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductsController;
 
-Route::get('/category', [ProductsController::class, 'category']);
+Route::get('/', [ProductsController::class, 'category']);
 Route::get('/post', [ProductsController::class, 'post']);
 Route::get('/comment', [ProductsController::class, 'comment']);
 Route::get('/order', [ProductsController::class, 'order']);
