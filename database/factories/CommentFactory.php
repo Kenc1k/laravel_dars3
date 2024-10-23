@@ -14,7 +14,7 @@ class CommentFactory extends Factory
     {
         return [
             'body' => $this->faker->paragraph(),
-            'post_id' => Post::factory(), // Associate with a post
+            'post_id' => Post::factory(), 
         ];
     }
 }

@@ -15,7 +15,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'body' => $this->faker->paragraph(),
-            'category_id' => Category::factory(), // Associate with a category
+            'category_id' => Category::factory(), 
             'likes' => $this->faker->numberBetween(0, 100),
             'dislikes' => $this->faker->numberBetween(0, 100),
         ];

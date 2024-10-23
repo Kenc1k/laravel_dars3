@@ -13,7 +13,7 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            'product_id' => Product::factory(), // Associate with a product
+            'product_id' => Product::factory(), 
             'count' => $this->faker->numberBetween(1, 10),
             'summ' => $this->faker->randomFloat(2, 10, 100),
         ];
